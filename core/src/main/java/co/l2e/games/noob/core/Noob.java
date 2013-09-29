@@ -28,6 +28,10 @@ public class Noob implements ApplicationListener {
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(texture, 100+100*(float)Math.cos(elapsed), 100+25*(float)Math.sin(elapsed));
+		batch.draw(texture, 100+100*(float)Math.cos(elapsed+3), 100+25*(float)Math.sin(elapsed));
+		batch.draw(texture, 100+100*(float)Math.cos(elapsed), 100+25*(float)Math.sin(elapsed+3));
+		//System.out.println(elapsed);
+		batch.draw(texture, 100+100*(float)Math.cos(elapsed+3), 100+25*(float)Math.sin(elapsed+3));
 		batch.end();
 	}
 
